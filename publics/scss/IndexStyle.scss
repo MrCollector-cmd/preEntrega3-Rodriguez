@@ -1,0 +1,19 @@
+@import 'vars';
+@import 'animaciones';
+@import 'navbar';
+@import 'mainInicio';
+@import 'footer';
+@import 'mainSobreNosotros';
+
+a,input{
+    color: inherit;
+    font-family: inherit;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    // min-width: 100%;
+    // min-height: 100%;
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #b7c5d2 ;
+}

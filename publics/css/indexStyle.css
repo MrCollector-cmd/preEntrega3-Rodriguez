@@ -1,0 +1,203 @@
+@keyframes despliegueuno {
+  from {
+    opacity: 0;
+    transform: rotate(0deg);
+    transform: translateY(0rem);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-50deg) translate(-8rem, -2rem);
+  }
+}
+@keyframes desplieguedos {
+  from {
+    opacity: 0;
+    transform: rotate(0deg);
+    transform: translateY(0rem);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-30deg) translate(-4rem, 0rem);
+  }
+}
+@keyframes desplieguetres {
+  from {
+    opacity: 0;
+    transform: rotate(0deg);
+    transform: translateY(0rem);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-10deg) translate(1rem, 0rem);
+  }
+}
+@keyframes despliegueContainer {
+  from {
+    opacity: 0;
+    transform: translate(0rem, -10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0rem, 0rem);
+  }
+}
+nav a {
+  color: inherit;
+}
+
+nav {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.7137254902), rgba(114, 117, 85, 0.7764705882), rgba(127, 130, 98, 0.6980392157), rgba(142, 145, 111, 0.8235294118), rgba(156, 159, 124, 0.5843137255));
+  backdrop-filter: blur(2px);
+  z-index: 100;
+}
+nav a {
+  color: rgb(205, 209, 195) !important;
+}
+nav a img {
+  width: 5rem;
+}
+
+main {
+  color: rgb(205, 209, 195) !important;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 50;
+}
+main .containerInf {
+  width: 70%;
+  height: 70%;
+  opacity: 0;
+  animation-delay: 100ms;
+  animation-duration: 1s;
+  animation-name: despliegueContainer;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+main .containerInf .img {
+  top: -14rem;
+  left: -15%;
+}
+main .containerInf .img img {
+  top: 0rem;
+}
+main .containerInf .img #ctres {
+  width: 15rem;
+  object-fit: cover;
+  opacity: 0;
+  animation-delay: 300ms;
+  animation-duration: 2s;
+  animation-name: despliegueuno;
+  animation-fill-mode: forwards;
+}
+main .containerInf .img #cdos {
+  width: 15rem;
+  object-fit: cover;
+  opacity: 0;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-name: desplieguedos;
+}
+main .containerInf .img #cuno {
+  width: 15rem;
+  object-fit: cover;
+  opacity: 0;
+  animation-delay: 300ms;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-name: desplieguetres;
+}
+main .containerInf .inf {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.5843137255), rgba(114, 117, 85, 0.6078431373), rgba(127, 130, 98, 0.6980392157), rgba(142, 145, 111, 0.6392156863), rgba(156, 159, 124, 0.5843137255));
+  backdrop-filter: blur(2px);
+  width: 40rem;
+  min-width: 20rem;
+}
+main .containerInf .inf h1 {
+  font-size: 3.5rem;
+}
+main .containerInf .inf p {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 654px) {
+  main .containerInf .img {
+    top: -14rem;
+    left: 3rem;
+  }
+  main .containerInf #ctres {
+    width: 9rem;
+    object-fit: cover;
+    opacity: 0;
+    animation-delay: 300ms;
+    animation-duration: 2s;
+    animation-name: despliegueuno;
+    animation-fill-mode: forwards;
+  }
+  main .containerInf #cdos {
+    width: 9rem;
+    object-fit: cover;
+    opacity: 0;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-name: desplieguedos;
+  }
+  main .containerInf #cuno {
+    width: 9rem;
+    object-fit: cover;
+    opacity: 0;
+    animation-delay: 300ms;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-name: desplieguetres;
+  }
+}
+footer {
+  width: 100%;
+}
+footer nav {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.7803921569), rgba(114, 117, 85, 0.8117647059), rgba(127, 130, 98, 0.7803921569), rgba(142, 145, 111, 0.8235294118), rgba(156, 159, 124, 0.5843137255));
+  backdrop-filter: blur(2px);
+}
+
+#mainSobreNosotros {
+  position: absolute;
+  background-image: none;
+  background-color: #4d503b;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+#mainSobreNosotros section {
+  height: 60%;
+}
+#mainSobreNosotros section .secInf .info {
+  height: 10rem;
+  background-color: #646749;
+}
+#mainSobreNosotros section .secInf img {
+  width: 15rem;
+  object-fit: cover;
+}
+
+a, input {
+  color: inherit;
+  font-family: inherit;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Pixelify Sans", sans-serif;
+  color: #b7c5d2;
+}
+
+/*# sourceMappingURL=indexStyle.css.map */

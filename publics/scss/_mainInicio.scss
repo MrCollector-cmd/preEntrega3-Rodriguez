@@ -1,0 +1,105 @@
+main{
+    color: $color-font !important;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .containerInf{
+        width: 70%;
+        height: 70%;
+        .img{
+            top: -14rem;
+            left: -15%;
+            img{
+                top: 0rem;
+            }
+            #ctres{
+                width: 15rem;
+                object-fit: cover;
+                opacity: 0;
+                animation-delay: 300ms;
+                animation-duration: 2s;
+                animation-name: despliegueuno;
+                animation-fill-mode: forwards;
+            }
+            #cdos{
+                width: 15rem;
+                object-fit: cover;
+                opacity: 0;
+                animation-delay: 300ms;
+                animation-fill-mode: forwards;
+                animation-duration: 2s;
+                animation-name: desplieguedos;
+            }
+            #cuno{
+                width: 15rem;
+                object-fit: cover;
+                opacity: 0;
+                animation-delay: 300ms;
+                animation-fill-mode: forwards;
+                animation-duration: 2s;
+                animation-name: desplieguetres;
+            }
+        }
+        .inf{
+            background-color: transparent ;
+            background-image: linear-gradient(to bottom, #64674995, #7275559b, #7f8262b2, #8e916fa3, #9c9f7c95);
+            backdrop-filter: blur(2px);
+            width: 40rem;
+            min-width: 20rem;
+            h1{
+                font-size: 3.5rem;
+            }
+            p{
+                font-size: 1rem;
+            }
+        }
+        opacity: 0;
+            animation-delay: 100ms;
+            animation-duration: 1s;
+            animation-name: despliegueContainer;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+    }
+    z-index: 50;
+}
+
+@media screen and (max-width: 654px) {
+    main{
+        .containerInf{
+            .img{
+                top: -14rem;
+                left: 3rem;
+            }
+            #ctres{
+                width: 9rem;
+                object-fit: cover;
+                opacity: 0;
+                animation-delay: 300ms;
+                animation-duration: 2s;
+                animation-name: despliegueuno;
+                animation-fill-mode: forwards;
+            }
+            #cdos{
+                width: 9rem;
+                object-fit: cover;
+                opacity: 0;
+                animation-delay: 300ms;
+                animation-fill-mode: forwards;
+                animation-duration: 2s;
+                animation-name: desplieguedos;
+            }
+            #cuno{
+                width: 9rem;
+                object-fit: cover;
+                opacity: 0;
+                animation-delay: 300ms;
+                animation-fill-mode: forwards;
+                animation-duration: 2s;
+                animation-name: desplieguetres;
+            }
+        }
+    }
+}

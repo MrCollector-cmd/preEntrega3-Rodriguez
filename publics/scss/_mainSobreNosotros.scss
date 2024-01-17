@@ -1,0 +1,21 @@
+#mainSobreNosotros{
+    position: absolute;
+    background-image: none;
+    background-color: $color-4;
+    width: 100%;
+    height: 100%;
+    section{ 
+        height: 60%;
+        .secInf{
+            .info{
+                height: 10rem;
+                background-color: $color-5;
+            }
+            img{
+                width: 15rem;
+                object-fit: cover;
+            }
+        }
+    }
+    z-index: 0;
+}
