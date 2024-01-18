@@ -1,0 +1,38 @@
+#mainCartas{
+    h1{
+        background-color: $color-5-carrusel;
+        backdrop-filter: blur(2px);
+    }
+    #carouselExampleControls{
+        max-width: 50rem;
+        .infCartas{
+            width: 100%;
+            max-height: 25rem;
+            padding: 1.5rem;
+            background-color:$color-5-carrusel;
+            backdrop-filter: blur(2px);
+            .cartImg{
+                width: 15rem;
+                height: 20rem;
+                object-fit: cover;
+            }
+            .textCart{
+                width: 60%;
+                height: 25rem;
+            }
+        }
+    }
+}
+@media screen and (max-width:688px) {
+    .infCartas {
+        max-height: 30rem !important;
+        .cartImg{
+            width: 12rem !important;
+            height: 17rem !important;
+            object-fit: cover;
+        }
+        .textCart{
+            width: 100% !important;
+        }
+}
+}

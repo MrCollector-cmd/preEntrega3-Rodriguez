@@ -1,9 +1,10 @@
 @import 'vars';
 @import 'animaciones';
 @import 'navbar';
-@import 'mainInicio';
 @import 'footer';
+@import 'mainInicio';
 @import 'mainSobreNosotros';
+@import 'mainCartas';
 
 a,input{
     color: inherit;
@@ -12,8 +13,6 @@ a,input{
 body{
     width: 100vw;
     height: 100vh;
-    // min-width: 100%;
-    // min-height: 100%;
     font-family: 'Pixelify Sans', sans-serif;
     color: #b7c5d2 ;
 }
