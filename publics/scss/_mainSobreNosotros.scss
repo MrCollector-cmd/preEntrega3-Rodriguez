@@ -1,7 +1,8 @@
 #mainSobreNosotros, #mainIdeasEnMente{
     width: 100vw;
-    height: 83%;
+    height: 94vh;
     section{ 
+        margin-top: 3rem;
         .secInf{
             overflow: hidden;
             margin: 1rem 0;
@@ -34,26 +35,26 @@
     }
 }
 @media screen and (max-width:827px) {
-    #mainSobreNosotros,#mainIdeasEnMente{
-        height: 82.9% !important;
-    }
-    section{
-        margin: 0 auto !important;
-    }
-    section .secInf{
-        margin: 0.5rem 0;
-        height: 14rem !important ;
-    }
-    section .secInf .info{
-        flex-direction: column;
-        height: 14rem !important;
-        overflow-y: auto !important;
-    }
-    .info img{
-        min-height: 50%;
-        padding: .5rem;
-        width:80% !important;
-        height: 72% !important;
-        object-fit: cover;
+    #mainSobreNosotros, #mainIdeasEnMente{
+        section{
+            margin-top: 4rem !important;
+            height: 87% !important;
+        }
+        section .secInf{
+            margin: 0.4rem 0 !important;
+            height: 14rem !important ;
+        }
+        section .secInf .info{
+            flex-direction: column;
+            height: 14rem !important;
+            overflow-y: auto !important;
+        }
+        .info img{
+            min-height: 50%;
+            padding: .5rem;
+            width:80% !important;
+            height: 72% !important;
+            object-fit: cover;
+        }
     }
 }

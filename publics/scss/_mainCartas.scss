@@ -1,6 +1,7 @@
 #mainCartas{
-    height: 80%;
+    height: 90vh;
     h1{
+        margin-top: 5rem !important;
         background-color: $color-5-carrusel;
         backdrop-filter: blur(2px);
     }
@@ -25,15 +26,23 @@
     }
 }
 @media screen and (max-width:688px) {
-    .infCartas {
-        max-height: 30rem !important;
-        .cartImg{
-            width: 12rem !important;
-            height: 17rem !important;
-            object-fit: cover;
+    #mainCartas{
+        height: 94vh !important;
+        h1{
+            margin-top: 4.5rem !important;
+            background-color: $color-5-carrusel;
+            backdrop-filter: blur(2px);
         }
-        .textCart{
-            width: 100% !important;
+        .infCartas {
+            max-height: 29rem !important;
+            .cartImg{
+                width: 12rem !important;
+                height: 17rem !important;
+                object-fit: cover;
+            }
+            .textCart{
+                width: 100% !important;
+            }
         }
-}
+    }
 }
