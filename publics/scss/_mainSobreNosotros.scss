@@ -1,8 +1,6 @@
-#mainSobreNosotros{
-    background-image: none;
-    background-color: $color-4;
+#mainSobreNosotros, #mainIdeasEnMente{
     width: 100vw;
-    height: 100vh;
+    height: 83%;
     section{ 
         .secInf{
             overflow: hidden;
@@ -23,20 +21,39 @@
     }
     z-index: 0;
 }
+#mainIdeasEnMente{
+    section{ 
+        .secInf{
+            img{
+                width: 35rem;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        
+    }
+}
 @media screen and (max-width:827px) {
+    #mainSobreNosotros,#mainIdeasEnMente{
+        height: 82.9% !important;
+    }
+    section{
+        margin: 0 auto !important;
+    }
     section .secInf{
         margin: 0.5rem 0;
-        // height: 14rem ;
+        height: 14rem !important ;
     }
     section .secInf .info{
         flex-direction: column;
-        // height: 14rem ;
+        height: 14rem !important;
         overflow-y: auto !important;
     }
     .info img{
-        padding: 1rem;
-        width: 20rem;
-        height: 100%;
+        min-height: 50%;
+        padding: .5rem;
+        width:80% !important;
+        height: 72% !important;
         object-fit: cover;
     }
 }

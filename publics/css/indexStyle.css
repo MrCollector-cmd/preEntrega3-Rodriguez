@@ -41,6 +41,7 @@
     transform: translate(0rem, 0rem);
   }
 }
+@keyframes despliegueInfs {}
 nav a {
   color: inherit;
 }
@@ -67,17 +68,13 @@ footer nav {
   backdrop-filter: blur(2px);
 }
 
-main {
+#mainInicio {
   color: rgb(205, 209, 195) !important;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100vw;
+  height: 82.9vh;
   z-index: 50;
 }
-main .containerInf {
+#mainInicio .containerInf {
   width: 70%;
   height: 70%;
   opacity: 0;
@@ -87,14 +84,14 @@ main .containerInf {
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
-main .containerInf .img {
+#mainInicio .containerInf .img {
   top: -14rem;
   left: -15%;
 }
-main .containerInf .img img {
+#mainInicio .containerInf .img img {
   top: 0rem;
 }
-main .containerInf .img #ctres {
+#mainInicio .containerInf .img #ctres {
   width: 15rem;
   object-fit: cover;
   opacity: 0;
@@ -103,7 +100,7 @@ main .containerInf .img #ctres {
   animation-name: despliegueuno;
   animation-fill-mode: forwards;
 }
-main .containerInf .img #cdos {
+#mainInicio .containerInf .img #cdos {
   width: 15rem;
   object-fit: cover;
   opacity: 0;
@@ -112,7 +109,7 @@ main .containerInf .img #cdos {
   animation-duration: 2s;
   animation-name: desplieguedos;
 }
-main .containerInf .img #cuno {
+#mainInicio .containerInf .img #cuno {
   width: 15rem;
   object-fit: cover;
   opacity: 0;
@@ -121,24 +118,24 @@ main .containerInf .img #cuno {
   animation-duration: 2s;
   animation-name: desplieguetres;
 }
-main .containerInf .inf {
+#mainInicio .containerInf .inf {
   background-color: transparent;
   background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.5843137255), rgba(114, 117, 85, 0.6078431373), rgba(127, 130, 98, 0.6980392157), rgba(142, 145, 111, 0.6392156863), rgba(156, 159, 124, 0.5843137255));
   backdrop-filter: blur(2px);
   width: 40rem;
   min-width: 20rem;
 }
-main .containerInf .inf h1 {
+#mainInicio .containerInf .inf h1 {
   font-size: 3.5rem;
 }
-main .containerInf .inf p {
+#mainInicio .containerInf .inf p {
   font-size: 1rem;
 }
 
 @media screen and (max-width: 654px) {
   main .containerInf .img {
     top: -14rem;
-    left: 3rem;
+    left: 3rem !important;
   }
   main .containerInf #ctres {
     width: 9rem;
@@ -168,43 +165,59 @@ main .containerInf .inf p {
     animation-name: desplieguetres;
   }
 }
-#mainSobreNosotros {
-  background-image: none;
-  background-color: #4d503b;
+#mainSobreNosotros, #mainIdeasEnMente {
   width: 100vw;
-  height: 100vh;
+  height: 83%;
   z-index: 0;
 }
-#mainSobreNosotros section .secInf {
+#mainSobreNosotros section .secInf, #mainIdeasEnMente section .secInf {
   overflow: hidden;
   margin: 1rem 0;
   padding: 0;
   height: 10rem;
 }
-#mainSobreNosotros section .secInf .info {
+#mainSobreNosotros section .secInf .info, #mainIdeasEnMente section .secInf .info {
   height: 10rem;
   background-color: #646749;
 }
-#mainSobreNosotros section .secInf img {
+#mainSobreNosotros section .secInf img, #mainIdeasEnMente section .secInf img {
   width: 20rem;
   height: 100%;
   object-fit: cover;
 }
 
+#mainIdeasEnMente section .secInf img {
+  width: 35rem;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 827px) {
+  #mainSobreNosotros, #mainIdeasEnMente {
+    height: 82.9% !important;
+  }
+  section {
+    margin: 0 auto !important;
+  }
   section .secInf {
     margin: 0.5rem 0;
+    height: 14rem !important;
   }
   section .secInf .info {
     flex-direction: column;
+    height: 14rem !important;
     overflow-y: auto !important;
   }
   .info img {
-    padding: 1rem;
-    width: 20rem;
-    height: 100%;
+    min-height: 50%;
+    padding: 0.5rem;
+    width: 80% !important;
+    height: 72% !important;
     object-fit: cover;
   }
+}
+#mainCartas {
+  height: 80%;
 }
 #mainCartas h1 {
   background-color: rgba(100, 103, 73, 0.6705882353);
@@ -243,6 +256,17 @@ main .containerInf .inf p {
     width: 100% !important;
   }
 }
+.bg-color {
+  background-image: none;
+  background-color: #4d503b;
+}
+
+.bg-img {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 a, input {
   color: inherit;
   font-family: inherit;
