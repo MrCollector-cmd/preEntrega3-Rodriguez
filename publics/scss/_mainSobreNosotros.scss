@@ -1,34 +1,33 @@
 #mainSobreNosotros, #mainIdeasEnMente{
     width: 100vw;
     height: 94vh;
+    z-index: 0;
+}
+#mainSobreNosotros{
     section{ 
         margin-top: 3rem;
         .secInf{
-            overflow: hidden;
-            margin: 1rem 0;
-            padding: 0;
-            height: 10rem;
+            @include settingInfoSeI('container');
             .info{
-                height: 10rem;
-                background-color: $color-5;
+                @include settingInfoSeI('text');
             }
             img{
-                width: 20rem;
-                height: 100%;
-                object-fit: cover;
+                @include settingInfoSeI('imgS');
             }
         }
         
     }
-    z-index: 0;
 }
 #mainIdeasEnMente{
     section{ 
+        margin-top: 3rem;
         .secInf{
+            @include settingInfoSeI('container');
+            .info{
+                @include settingInfoSeI('text');
+            }
             img{
-                width: 35rem;
-                height: 100%;
-                object-fit: cover;
+                @include settingInfoSeI('imgI');
             }
         }
         

@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'animaciones';
+@import 'mixin';
 @import 'navbar';
 @import 'footer';
 @import 'mainInicio';
@@ -8,21 +9,14 @@
 
 
 .bg-color{
-    background-image: none;
-    background-color: $color-4;
+    @include settingsBg('color');
 }
 .bg-img{
-    background-image: url('../img/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include settingsBg('img');
 }
 a,input{
-    color: inherit;
-    font-family: inherit;
+    @include settingsGeneral('ini');
 }
 body{
-    width: 100vw;
-    height: 100vh;
-    font-family: 'Pixelify Sans', sans-serif;
-    color: #b7c5d2 ;
+    @include settingsGeneral('body');
 }

@@ -173,25 +173,39 @@ footer nav {
   height: 94vh;
   z-index: 0;
 }
-#mainSobreNosotros section, #mainIdeasEnMente section {
+
+#mainSobreNosotros section {
   margin-top: 3rem;
 }
-#mainSobreNosotros section .secInf, #mainIdeasEnMente section .secInf {
+#mainSobreNosotros section .secInf {
   overflow: hidden;
   margin: 1rem 0;
   padding: 0;
   height: 10rem;
 }
-#mainSobreNosotros section .secInf .info, #mainIdeasEnMente section .secInf .info {
+#mainSobreNosotros section .secInf .info {
   height: 10rem;
   background-color: #646749;
 }
-#mainSobreNosotros section .secInf img, #mainIdeasEnMente section .secInf img {
+#mainSobreNosotros section .secInf img {
   width: 20rem;
   height: 100%;
   object-fit: cover;
 }
 
+#mainIdeasEnMente section {
+  margin-top: 3rem;
+}
+#mainIdeasEnMente section .secInf {
+  overflow: hidden;
+  margin: 1rem 0;
+  padding: 0;
+  height: 10rem;
+}
+#mainIdeasEnMente section .secInf .info {
+  height: 10rem;
+  background-color: #646749;
+}
 #mainIdeasEnMente section .secInf img {
   width: 35rem;
   height: 100%;

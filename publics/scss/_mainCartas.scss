@@ -8,19 +8,12 @@
     #carouselExampleControls{
         max-width: 50rem;
         .infCartas{
-            width: 100%;
-            max-height: 25rem;
-            padding: 1.5rem;
-            background-color:$color-5-carrusel;
-            backdrop-filter: blur(2px);
+            @include settingCartasInf('container');
             .cartImg{
-                width: 15rem;
-                height: 20rem;
-                object-fit: cover;
+                @include settingCartasInf('img');
             }
             .textCart{
-                width: 60%;
-                height: 25rem;
+                @include settingCartasInf('text');
             }
         }
     }
