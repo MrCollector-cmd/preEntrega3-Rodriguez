@@ -1,64 +1,6 @@
 #mainInicio{
-    color: $color-font !important;
-    width: 100vw;
-    height: 94vh;
-    .containerInf{
-        width: 70%;
-        height: 70%;
-        .img{
-            top: -14rem;
-            left: -15%;
-            img{
-                top: 0rem;
-            }
-            #ctres{
-                width: 15rem;
-                object-fit: cover;
-                opacity: 0;
-                animation-delay: 300ms;
-                animation-duration: 2s;
-                animation-name: despliegueuno;
-                animation-fill-mode: forwards;
-            }
-            #cdos{
-                width: 15rem;
-                object-fit: cover;
-                opacity: 0;
-                animation-delay: 300ms;
-                animation-fill-mode: forwards;
-                animation-duration: 2s;
-                animation-name: desplieguedos;
-            }
-            #cuno{
-                width: 15rem;
-                object-fit: cover;
-                opacity: 0;
-                animation-delay: 300ms;
-                animation-fill-mode: forwards;
-                animation-duration: 2s;
-                animation-name: desplieguetres;
-            }
-        }
-        .inf{
-            background-color: transparent ;
-            background-image: linear-gradient(to bottom, #64674995, #7275559b, #7f8262b2, #8e916fa3, #9c9f7c95);
-            backdrop-filter: blur(2px);
-            width: 40rem;
-            min-width: 20rem;
-            h1{
-                font-size: 3.5rem;
-            }
-            p{
-                font-size: 1rem;
-            }
-        }
-        opacity: 0;
-            animation-delay: 100ms;
-            animation-duration: 1s;
-            animation-name: despliegueContainer;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
-    }
+    @include settingsGeneral('main');
+    @include settingsInicio;
     z-index: 50;
 }
 

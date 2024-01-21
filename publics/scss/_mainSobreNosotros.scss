@@ -1,11 +1,8 @@
 #mainSobreNosotros, #mainIdeasEnMente{
-    width: 100vw;
-    height: 94vh;
-    z-index: 0;
+    @include settingsGeneral('main');
 }
 #mainSobreNosotros{
     section{ 
-        margin-top: 3rem;
         .secInf{
             @include settingInfoSeI('container');
             .info{
@@ -20,7 +17,6 @@
 }
 #mainIdeasEnMente{
     section{ 
-        margin-top: 3rem;
         .secInf{
             @include settingInfoSeI('container');
             .info{
@@ -36,8 +32,7 @@
 @media screen and (max-width:827px) {
     #mainSobreNosotros, #mainIdeasEnMente{
         section{
-            margin-top: 4rem !important;
-            height: 87% !important;
+            height: 80% !important;
         }
         section .secInf{
             margin: 0.4rem 0 !important;
