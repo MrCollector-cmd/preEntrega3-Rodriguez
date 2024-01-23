@@ -92,7 +92,7 @@ header {
 }
 header nav {
   background-color: transparent;
-  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.7137254902), rgba(114, 117, 85, 0.7764705882), rgba(127, 130, 98, 0.6980392157), rgba(142, 145, 111, 0.8235294118), rgba(156, 159, 124, 0.5843137255));
+  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.7450980392), rgba(114, 117, 85, 0.4901960784), rgba(127, 130, 98, 0.3568627451), rgba(142, 145, 111, 0.0901960784), rgba(156, 159, 124, 0));
   backdrop-filter: blur(2px);
   height: 4.5rem;
   z-index: 100;
@@ -333,7 +333,7 @@ footer nav {
 }
 
 .bg-img {
-  background-image: url("../img/bg.png");
+  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.4901960784), rgba(114, 117, 85, 0.3843137255), rgba(127, 130, 98, 0.3058823529), rgba(142, 145, 111, 0.368627451), rgba(156, 159, 124, 0.2745098039)), url("../img/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
