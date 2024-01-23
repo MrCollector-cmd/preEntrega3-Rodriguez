@@ -1,5 +1,17 @@
 #mainSobreNosotros, #mainIdeasEnMente{
     @include settingsGeneral('main');
+    .secInfL{
+        animation-name: despliegueInfL;
+        animation-duration: 1.1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
+    .secInfR{
+        animation-name: despliegueInfR;
+        animation-duration: 1.1s;
+        animation-timing-function: ease-in;
+        animation-fill-mode: forwards;
+    }
 }
 #mainSobreNosotros{
     section{ 

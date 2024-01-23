@@ -39,10 +39,21 @@
         transform: translate(0rem, 0rem);
     }
 }
-@keyframes despliegueInfs {
-    from{
-
-    }to{
-        
-    }
+@keyframes despliegueInfL {
+        0%{transform: translate(-100%);}
+        20% {transform: rotate3d(0, 0, 1, 2deg);}
+        40% {transform: rotate3d(0, 0, 1, -2deg);}
+        60% {transform: rotate3d(0, 0, 1, 2deg);}
+        80% {transform: rotate3d(0, 0, 1, -2deg);}
+        to  {transform: rotate3d(0, 0, 1, 0deg);
+            transform: translate(0%);}
+}
+@keyframes despliegueInfR {
+    0%{transform: translate(100%);}
+    20% {transform: rotate3d(0, 0, 1, 2deg);}
+    40% {transform: rotate3d(0, 0, 1, -2deg);}
+    60% {transform: rotate3d(0, 0, 1, 2deg);}
+    80% {transform: rotate3d(0, 0, 1, -2deg);}
+    to  {transform: rotate3d(0, 0, 1, 0deg);
+        transform: translate(0%);}
 }

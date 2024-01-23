@@ -41,7 +41,48 @@
     transform: translate(0rem, 0rem);
   }
 }
-@keyframes despliegueInfs {}
+@keyframes despliegueInfL {
+  0% {
+    transform: translate(-100%);
+  }
+  20% {
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+    transform: translate(0%);
+  }
+}
+@keyframes despliegueInfR {
+  0% {
+    transform: translate(100%);
+  }
+  20% {
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 2deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -2deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+    transform: translate(0%);
+  }
+}
 nav a {
   color: inherit;
 }
@@ -172,6 +213,18 @@ footer nav {
   color: rgb(205, 209, 195) !important;
   width: 100vw;
   height: 100vh;
+}
+#mainSobreNosotros .secInfL, #mainIdeasEnMente .secInfL {
+  animation-name: despliegueInfL;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+#mainSobreNosotros .secInfR, #mainIdeasEnMente .secInfR {
+  animation-name: despliegueInfR;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 #mainSobreNosotros section .secInf {
