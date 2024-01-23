@@ -1,13 +1,13 @@
-@import 'vars';
-@import 'animaciones';
-@import 'mixin';
-@import 'navbar';
-@import 'footer';
-@import 'mainInicio';
-@import 'mainSobreNosotros';
-@import 'mainCartas';
+@import 'utilitis/vars';
+@import 'utilitis/animaciones';
+@import 'utilitis/mixin';
+@import 'elements/navbar';
+@import 'elements/footer';
+@import 'elements/mainInicio';
+@import 'elements/mainSobreNosotros';
+@import 'elements/mainCartas';
 
-
+// clases globales 
 .bg-color{
     @include settingsBg('color');
 }
