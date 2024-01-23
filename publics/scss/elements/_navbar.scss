@@ -7,11 +7,12 @@ header{
         background-color: transparent ;
         background-image: linear-gradient(to bottom, #646749b6, #727555c6, #7f8262b2, #8e916fd2, #9c9f7c95);
         backdrop-filter: blur(2px);
+        height: 4.5rem;
         a{
             color: $color-font !important;
         }
         a img{
-            width: 5rem;
+            width: 5.5rem;
         }
         z-index: 100;
     }
