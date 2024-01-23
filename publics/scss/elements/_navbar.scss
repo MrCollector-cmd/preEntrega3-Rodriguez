@@ -5,14 +5,15 @@ header{
     width: 100%;
     nav{
         background-color: transparent ;
-        background-image: linear-gradient(to bottom, #646749be, #7275557d, #7f82625b, #8e916f17, #9c9f7c00);
+        background-image: linear-gradient(to bottom, #646749be, #72755567, #7f826239, #8e916f17, #9c9f7c00);
         backdrop-filter: blur(2px);
-        height: 4.5rem;
+        min-height: 4.5rem;
         a{
             color: $color-font !important;
         }
         a img{
-            width: 5.5rem;
+            width: 4rem;
+            height: 4rem;
         }
         z-index: 100;
     }

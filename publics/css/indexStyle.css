@@ -92,16 +92,17 @@ header {
 }
 header nav {
   background-color: transparent;
-  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.7450980392), rgba(114, 117, 85, 0.4901960784), rgba(127, 130, 98, 0.3568627451), rgba(142, 145, 111, 0.0901960784), rgba(156, 159, 124, 0));
+  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.7450980392), rgba(114, 117, 85, 0.4039215686), rgba(127, 130, 98, 0.2235294118), rgba(142, 145, 111, 0.0901960784), rgba(156, 159, 124, 0));
   backdrop-filter: blur(2px);
-  height: 4.5rem;
+  min-height: 4.5rem;
   z-index: 100;
 }
 header nav a {
   color: rgb(205, 209, 195) !important;
 }
 header nav a img {
-  width: 5.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 footer {
@@ -333,7 +334,7 @@ footer nav {
 }
 
 .bg-img {
-  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.4901960784), rgba(114, 117, 85, 0.3843137255), rgba(127, 130, 98, 0.3058823529), rgba(142, 145, 111, 0.368627451), rgba(156, 159, 124, 0.2745098039)), url("../img/bg2.png");
+  background-image: linear-gradient(to bottom, rgba(100, 103, 73, 0.4901960784), rgba(114, 117, 85, 0.3843137255), rgba(127, 130, 98, 0.3058823529), rgba(142, 145, 111, 0.368627451), rgba(156, 159, 124, 0.4235294118)), url("../img/bg2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

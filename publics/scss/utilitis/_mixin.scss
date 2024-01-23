@@ -63,7 +63,7 @@
         background-color: $color-4;
     
     }@else  if($bgType == 'img'){
-        background-image:linear-gradient(to bottom, #6467497d, #72755562, #7f82624e, #8e916f5e, #9c9f7c46), url('../img/bg2.png');
+        background-image:linear-gradient(to bottom, #6467497d, #72755562, #7f82624e, #8e916f5e, #9c9f7c6c), url('../img/bg2.png');
         background-repeat: no-repeat;
         background-size: cover;
     }
