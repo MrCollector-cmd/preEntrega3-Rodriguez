@@ -1,7 +1,7 @@
 #mainContacto{
     @include settingsGeneral('main');
-    section{
-        @include settingCartasInf('container');
+    .contacto{
+        
         width: 30rem;
         form{
             fieldset{
@@ -35,16 +35,16 @@
     }
 }
 @media screen and (max-width: 469px) {
-    section{
-        width: 20rem !important;
-        fieldset{
-            width: 90% !important;
-        }
-        input{
-            width: 9rem !important;
-        }
-         label{
-                font-size: 1.3rem;
+        .contacto{
+            width: 20rem !important;
+            fieldset{
+                width: 90% !important;
             }
-    }
+            input{
+                width: 9rem !important;
+            }
+             label{
+                    font-size: 1.3rem;
+                }
+        }
 }

@@ -370,16 +370,16 @@ footer nav {
 }
 
 @media screen and (max-width: 469px) {
-  section {
+  .contacto {
     width: 20rem !important;
   }
-  section fieldset {
+  .contacto fieldset {
     width: 90% !important;
   }
-  section input {
+  .contacto input {
     width: 9rem !important;
   }
-  section label {
+  .contacto label {
     font-size: 1.3rem;
   }
 }
