@@ -328,6 +328,47 @@ footer nav {
     width: 100% !important;
   }
 }
+#mainContacto {
+  color: rgb(205, 209, 195) !important;
+  width: 100vw;
+  height: 100vh;
+}
+#mainContacto section {
+  width: 100%;
+  max-height: 25rem;
+  padding: 1.5rem;
+  background-color: rgba(100, 103, 73, 0.6705882353);
+  backdrop-filter: blur(2px);
+  max-width: 50vw;
+}
+#mainContacto section form fieldset {
+  width: 30vw;
+}
+#mainContacto section form label {
+  font-size: 1.3rem;
+}
+#mainContacto section form input {
+  width: 20vw;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #4d503b;
+}
+#mainContacto section form input::placeholder, #mainContacto section form textarea::placeholder {
+  color: #404232;
+  padding: 0 0.5rem;
+}
+#mainContacto section form textarea {
+  background-color: #848863;
+  border: none;
+  resize: none;
+  border-radius: 20px;
+}
+#mainContacto section form input[type=submit] {
+  border: none;
+  background-color: #848863;
+  border-radius: 20px;
+}
+
 .bg-color {
   background-image: none;
   background-color: #4d503b;

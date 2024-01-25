@@ -1,0 +1,36 @@
+#mainContacto{
+    @include settingsGeneral('main');
+    section{
+        @include settingCartasInf('container');
+        max-width: 50vw;
+        form{
+            fieldset{
+                width: 30vw;
+            }
+            label{
+                font-size: 1.3rem;
+            }
+            input{
+                width: 20vw;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $color-4;
+            }
+            input::placeholder,textarea::placeholder{
+                color: $color-3;
+                padding: 0 .5rem;
+            }
+            textarea{
+                background-color: $color-6;
+                border: none;
+                resize: none;
+                border-radius: 20px;
+            }
+            input[type=submit]{
+                border: none;
+                background-color: $color-6;
+                border-radius: 20px;
+            }
+        }
+    }
+}
