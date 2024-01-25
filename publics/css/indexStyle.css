@@ -333,7 +333,7 @@ footer nav {
   width: 100vw;
   height: 100vh;
 }
-#mainContacto section {
+#mainContacto .contacto {
   width: 100%;
   max-height: 25rem;
   padding: 1.5rem;
@@ -341,29 +341,29 @@ footer nav {
   backdrop-filter: blur(2px);
   width: 30rem;
 }
-#mainContacto section form fieldset {
+#mainContacto .contacto form fieldset {
   width: 20rem;
 }
-#mainContacto section form label {
+#mainContacto .contacto form label {
   font-size: 1.3rem;
 }
-#mainContacto section form input {
+#mainContacto .contacto form input {
   width: 13rem;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #4d503b;
 }
-#mainContacto section form input::placeholder, #mainContacto section form textarea::placeholder {
+#mainContacto .contacto form input::placeholder, #mainContacto .contacto form textarea::placeholder {
   color: #404232;
   padding: 0 0.5rem;
 }
-#mainContacto section form textarea {
+#mainContacto .contacto form textarea {
   background-color: #848863;
   border: none;
   resize: none;
   border-radius: 20px;
 }
-#mainContacto section form input[type=submit] {
+#mainContacto .contacto form input[type=submit] {
   border: none;
   background-color: #848863;
   border-radius: 20px;
@@ -371,13 +371,13 @@ footer nav {
 
 @media screen and (max-width: 469px) {
   .contacto {
-    width: 20rem !important;
+    width: 100vw !important;
   }
   .contacto fieldset {
     width: 90% !important;
   }
   .contacto input {
-    width: 9rem !important;
+    width: 60% !important;
   }
   .contacto label {
     font-size: 1.3rem;
