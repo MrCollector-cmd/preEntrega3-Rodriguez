@@ -339,16 +339,16 @@ footer nav {
   padding: 1.5rem;
   background-color: rgba(100, 103, 73, 0.6705882353);
   backdrop-filter: blur(2px);
-  max-width: 50vw;
+  width: 30rem;
 }
 #mainContacto section form fieldset {
-  width: 30vw;
+  width: 20rem;
 }
 #mainContacto section form label {
   font-size: 1.3rem;
 }
 #mainContacto section form input {
-  width: 20vw;
+  width: 13rem;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid #4d503b;
@@ -369,6 +369,20 @@ footer nav {
   border-radius: 20px;
 }
 
+@media screen and (max-width: 469px) {
+  section {
+    width: 20rem !important;
+  }
+  section fieldset {
+    width: 90% !important;
+  }
+  section input {
+    width: 9rem !important;
+  }
+  section label {
+    font-size: 1.3rem;
+  }
+}
 .bg-color {
   background-image: none;
   background-color: #4d503b;

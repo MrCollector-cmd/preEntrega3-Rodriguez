@@ -2,16 +2,16 @@
     @include settingsGeneral('main');
     section{
         @include settingCartasInf('container');
-        max-width: 50vw;
+        width: 30rem;
         form{
             fieldset{
-                width: 30vw;
+                width: 20rem;
             }
             label{
                 font-size: 1.3rem;
             }
             input{
-                width: 20vw;
+                width: 13rem;
                 background-color: transparent;
                 border: none;
                 border-bottom: 2px solid $color-4;
@@ -32,5 +32,19 @@
                 border-radius: 20px;
             }
         }
+    }
+}
+@media screen and (max-width: 469px) {
+    section{
+        width: 20rem !important;
+        fieldset{
+            width: 90% !important;
+        }
+        input{
+            width: 9rem !important;
+        }
+         label{
+                font-size: 1.3rem;
+            }
     }
 }
